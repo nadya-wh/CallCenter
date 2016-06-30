@@ -1,0 +1,5 @@
+<apex:page >
+    <apex:pageBlock title="Case created">
+        <apex:outputText value="Thank you for creating Case request!"></apex:outputText>
+    </apex:pageBlock>
+</apex:page>

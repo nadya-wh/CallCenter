@@ -1,0 +1,19 @@
+{
+    "username": "artsiom_kukharau@epam.sf", 
+    "environment": "production", 
+    "project_name": "CallCenter", 
+    "workspace": "C:\\Program\\workspace", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "WN7WCFZLDHTHM01IWX8AP3KX7QG1CGZ6", 
+    "metadata_container": "1dc360000006qwSAAQ", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}
