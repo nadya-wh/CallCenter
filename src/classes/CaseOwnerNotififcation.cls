@@ -6,17 +6,12 @@ global class CaseOwnerNotififcation implements Schedulable {
 		List<Case> cases = [SELECT ID, Type,  
 							ContactId, Status
 							FROM Case 
-							WHERE LastEmailWasSent__c = false];
+							WHERE Status != 'Closed'];
 		List<Id> receivers = new List<Id>();
 		List<Id> whatIds = new List<Id>();
-		List<Case> closedCases = new List<Case>();
 		for (Case c : cases) {
 			receivers.add(c.ContactId);
 			whatIds.add(c.Id);
-			if (c.Status == 'Closed') {
-				closedCases.add(c);
-				c.LastEmailWasSent__c = true;
-			}
 		}
 		EmailTemplate et = [SELECT id 
 							FROM EmailTemplate 
@@ -29,9 +24,6 @@ global class CaseOwnerNotififcation implements Schedulable {
 			email.setWhatIds(whatIds);
 			email.setSaveAsActivity(false);
 			Messaging.SendEmail(New Messaging.MassEmailMessage[] {email});
-		}
-		if (closedCases.size() > 0) {
-			update closedCases;
 		}
 	}
 
