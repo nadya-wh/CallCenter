@@ -13,14 +13,11 @@ global class CaseOwnerNotififcation implements Schedulable {
 			receivers.add(c.ContactId);
 			whatIds.add(c.Id);
 		}
-		EmailTemplate et = [SELECT id 
-							FROM EmailTemplate 
-							WHERE name = :EMAIL_TEMPLATE_NAME];
-
+		
 		if (receivers.size() > 0) {
 			Messaging.MassEmailMessage  email = new Messaging.MassEmailMessage();
 			email.setTargetObjectIds(receivers);
-			email.setTemplateId(et.ID);
+			email.setTemplateId(EmailTemplateHelper.getTemplateId(EMAIL_TEMPLATE_NAME));
 			email.setWhatIds(whatIds);
 			email.setSaveAsActivity(false);
 			Messaging.SendEmail(New Messaging.MassEmailMessage[] {email});
