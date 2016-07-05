@@ -1,7 +1,7 @@
 public with sharing class CaseDataFactory {
 
 
-	private static final Integer RECORDS_COUNT = 20;
+	private static final Integer RECORDS_COUNT = 2;
 	private static final String CONTACT_NAME_PREFIX = 'Test_User';
 	private static final String EMAIL_POSTFIX = '@test.com';
 
