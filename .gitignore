@@ -18,6 +18,7 @@ retrieveOutput/
 unpacked/
 build.properties
 build.xml
+unpackaged/
 
 *.sublime-settings
 
