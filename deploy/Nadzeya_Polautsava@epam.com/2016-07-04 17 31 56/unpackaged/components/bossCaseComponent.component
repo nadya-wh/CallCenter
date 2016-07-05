@@ -1,0 +1,11 @@
+<apex:component controller="BossEmailTemplateController" access="global">
+<link href="{!URLFOR($Resource.bootstrap336, 'bootstrap/css/bootstrap.min.css')}" rel="stylesheet" media="screen"/>
+    <apex:dataTable var="case" value="{! cases}" styleClass="table" border="2">
+        <apex:column headerValue="ID">
+            {! case.ID}
+        </apex:column>
+        <apex:column value="{! case.Status}" headerValue="Status"/>
+        <apex:column value="{! case.Description}" headerValue="Description"/>
+        <apex:column value="{! case.Owner.Name}" headerValue="Owner Name"/>
+    </apex:dataTable>
+</apex:component>
