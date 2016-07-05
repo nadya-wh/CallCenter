@@ -1,5 +1,5 @@
 public with sharing class CountProductsPriceOnCaseHelper {
-	public CountProductsPriceOnCaseHelper() {
+	public static Long countProductsPriceOnCase(Case case) {
 		
 	}
 }

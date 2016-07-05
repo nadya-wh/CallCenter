@@ -1,13 +1,13 @@
-public with sharing class CaseChartController {
+public with sharing class ChartController {
     
     public List<Data> getData() {
-        return CaseChartController.getChartData();
+        return ChartController.getChartData();
     }
     
     
     @RemoteAction
     public static List<Data> getRemoteData() {
-        return CaseChartController.getChartData();
+        return ChartController.getChartData();
     }
 
 

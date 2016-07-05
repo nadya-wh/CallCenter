@@ -11,6 +11,13 @@
 *.sublime-project
 config/
 deploy/
+codepkg/
+mypkg/
+removecodepkg/
+retrieveOutput/
+unpacked/
+build.properties
+build.xml
 
 *.sublime-settings
 
