@@ -1,47 +1,52 @@
-<apex:page >
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<apex:page sidebar="false">
+
+	<link href="{!URLFOR($Resource.bootstrap336, 'bootstrap/css/bootstrap.min.css')}" rel="stylesheet" media="screen"/>
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap336, 'js/bootstrap.min.js')}"/>
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+    <div class="row">
+    <div class="col-lg-4 center-block">
+		<form action="https://www.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<form action="https://www.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+		    <input type="hidden" name="orgid" value="00D36000001GlfX"/>
+		    <input type="hidden" name="retURL" value="/apex/Web2CaseThankYouPage"/>
 
-    <input type="hidden" name="orgid" value="00D36000001GlfX"/>
-    <input type="hidden" name="retURL" value="http://"/>
+	  		<div class="form-group">
+			    <label for="name">Contact Name</label>
+			    <input type="text" id="name" maxlength="80" name="name" size="20" class="form-control" placeholder="Contact Name" /><br/>
+			</div>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="artsiom_kukharau@epam.com">                                      -->
-<!--  ----------------------------------------------------------------------  -->
+			<div class="form-group">
+			    <label for="email">Email</label>
+			    <input id="email" maxlength="80" name="email" size="20" type="text" class="form-control" placeholder="Email" /><br/>
+		    </div>
 
-    <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br/>
+			<div class="form-group">
+				<label for="00N3600000MutIZ">Record Type</label>
+				<select class="form-control" id="00N3600000MutIZ" name="00N3600000MutIZ" title="Record Type">
+					<option value="Product Complaint">Product Complaint</option>
+					<option value="Service Complaint">Service Complaint</option>
+					<option value="Product Inquiry">Product Inquiry</option>
+					<option value="Feedback">Feedback</option>
+			    </select><br/>
+			</div>
 
-Record Type:<select  id="00N3600000MutIZ" name="00N3600000MutIZ" title="Record Type"><option value="">--None--</option><option value="Product Complaint">Product Complaint</option>
-<option value="Service Complaint">Service Complaint</option>
-<option value="Product Inquiry">Product Inquiry</option>
-<option value="Feedback">Feedback</option>
-    </select><br/>
+			<div class="form-group">
+			    <label for="subject">Subject</label>
+			    <input id="subject" maxlength="80" name="subject" size="20" type="text" class="form-control" placeholder="Subject" /><br/>
+		    </div>
 
-    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br/>
+			<div class="form-group">
+			    <label for="description">Description</label>
+			    <textarea name="description" class="form-control" placeholder="Description"></textarea><br/>
+		    </div>
 
-    <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br/>
+		    <button type="submit" style="float:right;" name="submit" class="btn btn-primary">Submit</button>
 
-    <label for="description">Description</label><textarea name="description"></textarea><br/>
-
-    <input type="submit" name="submit"/>
-
-</form>
-
+		</form>
+	</div>
+	</div>
 
   
 </apex:page>
