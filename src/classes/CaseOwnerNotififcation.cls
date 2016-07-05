@@ -4,9 +4,18 @@ global class CaseOwnerNotififcation implements Schedulable {
 
 	global void execute(SchedulableContext ctx) {
 		List<Case> cases = [SELECT ID, Type,  
-							ContactId, Status
+							ContactId, Status, Contact.Email
 							FROM Case 
 							WHERE Status != 'Closed'];
+<<<<<<< HEAD
+
+		List<Messaging.SingleEmailMessage> mails = new List<Messaging.SingleEmailMessage>();
+		for (Case c : cases) {
+			Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
+			email.setToAddresses(new String[] { c.Contact.Email });
+			email.setTemplateId(EmailTemplateHelper.getTemplateId(EMAIL_TEMPLATE_NAME));
+			email.setTargetObjectId(c.ContactId);
+=======
 		List<Id> receivers = new List<Id>();
 		List<Id> whatIds = new List<Id>();
 		for (Case c : cases) {
@@ -19,9 +28,12 @@ global class CaseOwnerNotififcation implements Schedulable {
 			email.setTargetObjectIds(receivers);
 			email.setTemplateId(EmailTemplateHelper.getTemplateId(EMAIL_TEMPLATE_NAME));
 			email.setWhatIds(whatIds);
+>>>>>>> 1dbac89f9198d45fe6db392d12ad927e8cb779b9
 			email.setSaveAsActivity(false);
-			Messaging.SendEmail(New Messaging.MassEmailMessage[] {email});
+			email.setWhatId(c.Id);
+			mails.add(email);
 		}
+		Messaging.sendEmail(mails);
 	}
 
 
