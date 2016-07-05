@@ -1,0 +1,215 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "RoleHelper", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 3
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "RoleHelper", 
+    "tableDeclaration": {
+        "type": "RoleHelper", 
+        "modifiers": [
+            "public"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 1
+        }, 
+        "name": "RoleHelper"
+    }, 
+    "key": "01p3600000GzkIaAAJ", 
+    "variables": [
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 52, 
+                "line": 7
+            }, 
+            "name": "userId"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 9
+            }, 
+            "name": "roleId"
+        }, 
+        {
+            "type": "Set", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 12
+            }, 
+            "name": "allSubRoleIds"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 13
+            }, 
+            "name": "users"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 71, 
+                "line": 20
+            }, 
+            "name": "userRole"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 22
+            }, 
+            "name": "roleId"
+        }, 
+        {
+            "type": "Set", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 25
+            }, 
+            "name": "allSubRoleIds"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 26
+            }, 
+            "name": "users"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 45, 
+                "line": 33
+            }, 
+            "name": "roleId"
+        }, 
+        {
+            "type": "Set", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 34
+            }, 
+            "name": "currentRoleIds"
+        }, 
+        {
+            "type": "UserRole", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 35
+            }, 
+            "name": "userRole"
+        }
+    ], 
+    "id": "01p3600000GzkIaAAJ", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "getRoleSubordinateUsers", 
+            "parameters": [
+                {
+                    "type": "Id", 
+                    "name": "userId"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 7
+            }, 
+            "returnType": "Set", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "getRoleSubordinateUsersForRoleName", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "userRole"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 20
+            }, 
+            "returnType": "Set", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "getSubRoleIds", 
+            "parameters": [
+                {
+                    "type": "Id", 
+                    "name": "roleId"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 33
+            }, 
+            "returnType": "Set", 
+            "type": null
+        }
+    ]
+}

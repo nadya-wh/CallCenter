@@ -1,0 +1,20 @@
+{
+    "username": "Nadzeya_Polautsava@epam.sf", 
+    "project_name": "CallCenter", 
+    "org_url": "", 
+    "namespace": "", 
+    "metadata_container": "1dc3600000071wWAAQ", 
+    "environment": "production", 
+    "workspace": "C:\\Users\\Nadzeya_Polautsava\\Dropbox\\Salesforce", 
+    "id": "X8SEXO4M2QO9UIE9BICCN7NTRX5L4U9A", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "AssignmentRules", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "roleName", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 3
+            }, 
+            "type": "String"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "templateName", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 4
+            }, 
+            "type": "String"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "NotificationSenderHelper", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "roleName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "templateName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 6
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "NotificationSenderHelper", 
+    "tableDeclaration": {
+        "type": "NotificationSenderHelper", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "NotificationSenderHelper"
+    }, 
+    "key": "01p3600000H1oeRAAR", 
+    "variables": [
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 6
+            }, 
+            "name": "roleName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 58, 
+                "line": 6
+            }, 
+            "name": "templateName"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 6, 
+                "line": 12
+            }, 
+            "name": "roleId"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 13
+            }, 
+            "name": "users"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 16
+            }, 
+            "name": "mails"
+        }, 
+        {
+            "type": "User", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 17
+            }, 
+            "name": "user"
+        }, 
+        {
+            "type": "SingleEmailMessage", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 33, 
+                "line": 18
+            }, 
+            "name": "email"
+        }
+    ], 
+    "id": "01p3600000H1oeRAAR", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "send", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 11
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}
