@@ -1,0 +1,11 @@
+Dear {!Contact.FirstName},
+Yorur case {! Case.Id} is {!Case.Status}.
+
+Thank you,
+
+{!User.Name}
+{!Organization.Name}
+
+Your comment:
+
+{!Case.Description}
