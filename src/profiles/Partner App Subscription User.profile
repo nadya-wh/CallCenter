@@ -348,6 +348,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+<<<<<<< HEAD
         <field>Contact.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -463,6 +464,8 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+=======
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <field>Product2.Description</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -653,6 +656,7 @@
         <object>Account</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+<<<<<<< HEAD
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -662,11 +666,20 @@
         <object>Contact</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+=======
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
     <pageAccesses>
         <apexPage>ChartPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+<<<<<<< HEAD
+=======
+        <apexPage>Test</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <apexPage>Web2CasePage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -698,10 +711,13 @@
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+<<<<<<< HEAD
     <tabVisibilities>
         <tab>standard-Contact</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+=======
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
     <userLicense>Partner App Subscription</userLicense>
     <userPermissions>
         <enabled>true</enabled>

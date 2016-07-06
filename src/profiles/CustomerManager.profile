@@ -347,6 +347,7 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+<<<<<<< HEAD
         <editable>false</editable>
         <field>Contact.AccountId</field>
         <readable>true</readable>
@@ -462,6 +463,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+=======
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <editable>true</editable>
         <field>Product2.Description</field>
         <readable>true</readable>
@@ -668,6 +671,7 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
+<<<<<<< HEAD
         <object>Contact</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -677,6 +681,8 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
+=======
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <object>Product2</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -685,6 +691,13 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+<<<<<<< HEAD
+=======
+        <apexPage>Test</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <apexPage>Web2CasePage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -721,10 +734,13 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+<<<<<<< HEAD
         <tab>standard-Contact</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+=======
+>>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <tab>standard-Product2</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
