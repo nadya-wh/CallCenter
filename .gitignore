@@ -8,7 +8,19 @@
 
 # project files should be checked into the repository, unless a significant
 # proportion of contributors will probably not be using SublimeText
-# *.sublime-project
+*.sublime-project
+config/
+deploy/
+codepkg/
+mypkg/
+removecodepkg/
+retrieveOutput/
+unpacked/
+build.properties
+build.xml
+unpackaged/
+
+*.sublime-settings
 
 # sftp configuration file
 sftp-config.json
