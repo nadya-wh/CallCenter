@@ -1,0 +1,36 @@
+<apex:component controller="ManagerEmailTemplateController" access="global">
+    <style>
+         .table { 
+            color: #333; 
+            font-family: Helvetica, Arial, sans-serif; 
+            width: 640px; 
+            border-collapse: 
+            collapse; border-spacing: 0; 
+         }
+            
+        .td { border: 1px solid #CCC; height: 30px; } 
+        
+        .th {
+            background: #F3F3F3; 
+            font-weight: bold;
+        }
+        
+        .td {
+            background: #FAFAFA; 
+            text-align: center; 
+        }
+    </style>   
+    <div class="container">
+        <apex:dataTable var="case" value="{! cases}" styleClass="table">
+            <apex:column headerValue="ID" styleClass="td">
+                {! case.ID}
+            </apex:column>
+            <apex:column value="{! case.Status}" headerValue="Status" styleClass="td"/>
+            <apex:column value="{! case.Description}" headerValue="Description" styleClass="td"/>
+            <apex:column value="{! case.Owner.Name}" headerValue="Owner Name" styleClass="td"/>
+            <apex:column value="{! case.CreatedDate}" headerValue="Creation Date" styleClass="td"/>
+            <apex:column value="{! case.Priority}" headerValue="Priority" styleClass="td"/>
+
+        </apex:dataTable>
+    </div>
+</apex:component>
