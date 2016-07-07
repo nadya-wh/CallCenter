@@ -1,16 +1,13 @@
-<apex:page controller="ChartController">
-    <apex:chart height="400" width="700" data="{!data}">
-        <apex:legend position="right"/>
-        <apex:axis type="Numeric" position="left" fields="data1"
-            title="Opportunities Closed" grid="true"/>
-        <apex:axis type="Numeric" position="right" fields="data3"
-            title="Revenue (millions)"/>
-        <apex:axis type="Category" position="bottom" fields="name"
-            title="Month of the Year">
-            <apex:chartLabel rotate="315"/>
-        </apex:axis>
-        <apex:lineSeries title="Active products" axis="left" xField="name" yField="data1" markerType="circle" markerSize="4" markerFill="#8E35EF"/>
-        <apex:lineSeries title="Inactive products" axis="left" xField="name" yField="data2"
-            markerType="circle" markerSize="4" markerFill="#FF0000"/>
-    </apex:chart>
+<apex:page controller="ChartController" sidebar="false">
+	<apex:pageBlock title="Organisation statistic charts">
+		<apex:pageBlockSection title="Product active/inactive statistic">
+		    <apex:chart height="300" width="600" data="{!productData}" animate="false">
+		        <apex:pieSeries labelField="name" dataField="data" donut="20" colorSet="#1ad06e,#ff2b2b">
+		        <apex:chartLabel orientation="vertical"  color="#ffffff"/>
+		    </apex:pieSeries>
+
+		        <apex:legend position="left"/>
+		    </apex:chart>
+		</apex:pageBlockSection>
+    </apex:pageBlock>
 </apex:page>

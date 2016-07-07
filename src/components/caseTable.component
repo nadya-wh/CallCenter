@@ -1,35 +1,35 @@
-<apex:component controller="ManagerEmailTemplateController" access="global">
+<apex:component controller="CaseController" access="global">
+    <apex:attribute name="role" type="String" default="CC Manager" description="Role" assignTo="{! chosenRole}"/>
     <style>
-         .table { 
+         table { 
             color: #333; 
             font-family: Helvetica, Arial, sans-serif; 
             width: 640px; 
-            border-collapse: 
-            collapse; border-spacing: 0; 
+            border-collapse: collapse; 
+            border-spacing: 3; 
          }
             
-        .td { border: 1px solid #CCC; height: 30px; } 
+        td { border: 1px solid #CCC; height: 30px; } 
         
-        .th {
-            background: #F3F3F3; 
-            font-weight: bold;
+        td {
+            background: #FAFAFA; 
+            text-align: center;
+            padding: 15px;
         }
         
-        .td {
-            background: #FAFAFA; 
-            text-align: center; 
+        th {
+            height: 50px;
+            padding: 15px;
         }
     </style>   
     <div class="container">
-        <apex:dataTable var="case" value="{! cases}" styleClass="table">
-            <apex:column headerValue="ID" styleClass="td">
-                {! case.ID}
-            </apex:column>
-            <apex:column value="{! case.Status}" headerValue="Status" styleClass="td"/>
-            <apex:column value="{! case.Description}" headerValue="Description" styleClass="td"/>
-            <apex:column value="{! case.Owner.Name}" headerValue="Owner Name" styleClass="td"/>
-            <apex:column value="{! case.CreatedDate}" headerValue="Creation Date" styleClass="td"/>
-            <apex:column value="{! case.Priority}" headerValue="Priority" styleClass="td"/>
+        <apex:dataTable var="case" value="{! cases}" styleClass="table" rowClasses="td" headerClass="th">
+            <apex:column value="{! case.ID}" headerValue="ID" />
+            <apex:column value="{! case.Status}" headerValue="Status"/>
+            <apex:column value="{! case.Description}" headerValue="Description"/>
+            <apex:column value="{! case.Owner.Name}" headerValue="Owner Name"/>
+            <apex:column value="{! case.CreatedDate}" headerValue="Creation Date"/>
+            <apex:column value="{! case.Priority}" headerValue="Priority"/>
 
         </apex:dataTable>
     </div>

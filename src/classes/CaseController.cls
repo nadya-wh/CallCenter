@@ -22,11 +22,6 @@ public with sharing class CaseController {
 			return getManagerCases();
 		} else if (BOSS_ROLE_NAME.equalsIgnoreCase(chosenRole)) {
 			return getBossCases();
-		} else if (chosenRole == null) {
-			Case c = new Case();
-			List<Case> cases = new List<Case>();
-			cases.add(c);
-			return cases;
 		} else {
 			return new List<Case>();
 		}

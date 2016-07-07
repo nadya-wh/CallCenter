@@ -1,3 +1,4 @@
+@isTest
 public with sharing class CaseDataFactory {
 
 
@@ -27,6 +28,14 @@ public with sharing class CaseDataFactory {
 		}
 
 		insert cases;
+	}
 
+	public static void createCasesWithStatus(String status) {
+		List<Case> cases = new List<Case>();
+		for (Integer i = 0; i < RECORDS_COUNT; i++) {
+			Case c = new Case(Status = status);
+			cases.add(c);
+		}
+		insert cases;
 	}
 }
