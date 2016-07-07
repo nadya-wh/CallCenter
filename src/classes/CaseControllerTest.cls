@@ -28,6 +28,5 @@ private class CaseControllerTest {
 		System.assertNotEquals(managerCases, bossCases);
 
 	}
-
 	
 }
