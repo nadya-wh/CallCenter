@@ -1,5 +1,6 @@
 public with sharing class CaseController {
 
+	
 	private static final String MANAGER_ROLE_NAME = 'CC Manager';
 	private static final String BOSS_ROLE_NAME = 'Boss';
 
@@ -22,11 +23,6 @@ public with sharing class CaseController {
 			return getManagerCases();
 		} else if (BOSS_ROLE_NAME.equalsIgnoreCase(chosenRole)) {
 			return getBossCases();
-		} else if (chosenRole == null) {
-			Case c = new Case();
-			List<Case> cases = new List<Case>();
-			cases.add(c);
-			return cases;
 		} else {
 			return new List<Case>();
 		}

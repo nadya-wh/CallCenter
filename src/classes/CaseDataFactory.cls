@@ -1,14 +1,10 @@
+@isTest
 public with sharing class CaseDataFactory {
 
 
 	private static final Integer RECORDS_COUNT = 2;
 	private static final String CONTACT_NAME_PREFIX = 'Test_User';
 	private static final String EMAIL_POSTFIX = '@test.com';
-
-
-	public CaseDataFactory() {
-		
-	}
 
 	public static void createCaseWithOwner() {
 		List<Contact> contacts = new List<Contact>();
@@ -27,6 +23,14 @@ public with sharing class CaseDataFactory {
 		}
 
 		insert cases;
+	}
 
+	public static void createCasesWithStatus(String status) {
+		List<Case> cases = new List<Case>();
+		for (Integer i = 0; i < RECORDS_COUNT; i++) {
+			Case c = new Case(Status = status);
+			cases.add(c);
+		}
+		insert cases;
 	}
 }

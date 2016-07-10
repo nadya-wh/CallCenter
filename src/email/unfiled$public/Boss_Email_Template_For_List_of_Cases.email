@@ -3,7 +3,7 @@
 Hello, {! recipient.Name}!
 There is a list of cases for last 7 days:
 
-<c:bossCaseComponent />
+<c:caseTable role="Boss"/>
 
 </messaging:htmlEmailBody>
 </messaging:emailTemplate>
