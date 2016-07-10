@@ -25,11 +25,11 @@
     <div class="container">
         <apex:dataTable var="case" value="{! cases}" styleClass="table" rowClasses="td" headerClass="th">
             <apex:column value="{! case.ID}" headerValue="ID" />
-            <apex:column value="{! case.Status}" headerValue="Status"/>
+            <apex:column value="{! case.Status}" headerValue="{!$Label.Status}"/>
             <apex:column value="{! case.Description}" headerValue="Description"/>
-            <apex:column value="{! case.Owner.Name}" headerValue="Owner Name"/>
-            <apex:column value="{! case.CreatedDate}" headerValue="Creation Date"/>
-            <apex:column value="{! case.Priority}" headerValue="Priority"/>
+            <apex:column value="{! case.Owner.Name}" headerValue="{!$Label.Owner_Name}"/>
+            <apex:column value="{! case.CreatedDate}" headerValue="{!$Label.Creation_Date}"/>
+            <apex:column value="{! case.Priority}" headerValue="{!$Label.Priority}"/>
 
         </apex:dataTable>
     </div>

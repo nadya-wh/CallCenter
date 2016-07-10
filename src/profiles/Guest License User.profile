@@ -57,6 +57,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ProductPagination</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>RoleHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -510,19 +514,35 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.Feedback</recordType>
+        <recordType>Case.Feedback_Canada</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.Product_Complaint</recordType>
+        <recordType>Case.Feedback_USA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.Product_Inquiry</recordType>
+        <recordType>Case.Product_Complaint_Canada</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.Service_Complaint</recordType>
+        <recordType>Case.Product_Complaint_USA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Product_Inquiry_Canada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Product_Inquiry_USA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Service_Complaint_Canada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Service_Complaint_USA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
@@ -656,9 +676,6 @@
     <layoutAssignments>
         <layout>WorkPerformanceCycle-Performance Cycle Layout - Winter %2716</layout>
     </layoutAssignments>
-    <layoutAssignments>
-        <layout>myobj__c-myobj Layout</layout>
-    </layoutAssignments>
     <pageAccesses>
         <apexPage>ChartPage</apexPage>
         <enabled>false</enabled>
@@ -673,22 +690,42 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Feedback</recordType>
+        <recordType>Case.Feedback_Canada</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Product_Complaint</recordType>
+        <recordType>Case.Feedback_USA</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Product_Inquiry</recordType>
+        <recordType>Case.Product_Complaint_Canada</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Service_Complaint</recordType>
+        <recordType>Case.Product_Complaint_USA</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Product_Inquiry_Canada</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Product_Inquiry_USA</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Service_Complaint_Canada</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Service_Complaint_USA</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <userLicense>Guest User License</userLicense>

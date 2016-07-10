@@ -57,6 +57,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ProductPagination</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>RoleHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -510,19 +514,35 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Feedback Page Layout</layout>
-        <recordType>Case.Feedback</recordType>
+        <recordType>Case.Feedback_Canada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Feedback Page Layout</layout>
+        <recordType>Case.Feedback_USA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Product Complaint Page Layout</layout>
-        <recordType>Case.Product_Complaint</recordType>
+        <recordType>Case.Product_Complaint_Canada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Product Complaint Page Layout</layout>
+        <recordType>Case.Product_Complaint_USA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Product Inquiry Page Layout</layout>
-        <recordType>Case.Product_Inquiry</recordType>
+        <recordType>Case.Product_Inquiry_Canada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Product Inquiry Page Layout</layout>
+        <recordType>Case.Product_Inquiry_USA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Service Complaint Page Layout</layout>
-        <recordType>Case.Service_Complaint</recordType>
+        <recordType>Case.Service_Complaint_Canada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Service Complaint Page Layout</layout>
+        <recordType>Case.Service_Complaint_USA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
@@ -656,9 +676,6 @@
     <layoutAssignments>
         <layout>WorkPerformanceCycle-Performance Cycle Layout - Winter %2716</layout>
     </layoutAssignments>
-    <layoutAssignments>
-        <layout>myobj__c-myobj Layout</layout>
-    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -709,22 +726,42 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Feedback</recordType>
+        <recordType>Case.Feedback_Canada</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Feedback_USA</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Product_Complaint_Canada</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <recordType>Case.Product_Complaint</recordType>
+        <recordType>Case.Product_Complaint_USA</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Product_Inquiry</recordType>
+        <recordType>Case.Product_Inquiry_Canada</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Service_Complaint</recordType>
+        <recordType>Case.Product_Inquiry_USA</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Service_Complaint_Canada</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Service_Complaint_USA</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
