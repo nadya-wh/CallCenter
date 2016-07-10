@@ -1,0 +1,64 @@
+<apex:page sidebar="false">
+
+    <style type="text/css">
+        .form-aa {
+            max-width: 300px;
+            position: relative;
+        }
+        .container {
+            vertical-align: middle !important
+        }
+    </style>
+
+    <link href="{!URLFOR($Resource.bootstrap336, 'bootstrap/css/bootstrap.min.css')}" rel="stylesheet" media="screen"/>
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap336, 'js/bootstrap.min.js')}"/>
+
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 center-block">
+                <form action="https://www.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+                    <input type="hidden" name="orgid" value="00D36000001GlfX"/>
+                    <input type="hidden" name="retURL" value="{!$Site.Domain}{!URLFOR($Page.Web2CaseThankYouPage)}"/>
+
+                    <div class="form-group">
+                        <label for="name">{!$Label.Contact_Name}</label>
+                        <input type="text" id="name" maxlength="80" name="name" size="20" class="form-control form-aa" placeholder="{!$Label.Contact_Name}" /><br/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" maxlength="80" name="email" size="20" type="text" class="form-control form-aa" placeholder="Email" /><br/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="00N3600000MutIZ">{!$Label.Record_Type}</label>
+                        <select class="form-control form-aa" id="00N3600000MutIZ" name="00N3600000MutIZ" title="Record Type">
+                            <option value="Product Complaint">{!$Label.Product_Complaint}</option>
+                            <option value="Service Complaint">{!$Label.Service_Complaint}</option>
+                            <option value="Product Inquiry">{!$Label.Product_Inquiry}</option>
+                            <option value="Feedback">{!$Label.Feedback}</option>
+                        </select><br/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">{!$Label.Subject}</label>
+                        <input id="subject" maxlength="80" name="subject" size="20" type="text" class="form-control form-aa" placeholder="{!$Label.Subject}" /><br/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">{!$Label.Description}</label>
+                        <textarea name="description" class="form-control form-aa" placeholder="{!$Label.Description}"></textarea><br/>
+                    </div>
+
+                    <button type="submit" style="float:right;" name="submit" class="btn btn-primary">{!$Label.Submit}</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+  
+</apex:page>

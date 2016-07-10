@@ -1,0 +1,23 @@
+<apex:page controller="ChartController" sidebar="false">
+	<apex:pageBlock title="Organisation statistic charts">
+		<apex:pageBlockSection title="Product active/inactive statistic">
+		    <apex:chart height="400" width="600" data="{!productData}" animate="false">
+		        <apex:pieSeries labelField="name" dataField="data" donut="20" colorSet="#1ad06e,#fa8072">
+		        <apex:chartLabel orientation="vertical" color="#ffffff"/>
+		    </apex:pieSeries>
+
+		        <apex:legend position="left"/>
+		    </apex:chart>
+		</apex:pageBlockSection>
+		<apex:pageBlockSection title="Case status statistic">
+		    <apex:chart data="{!caseData}" height="400" width="600" legend="false">
+			    <apex:axis type="Numeric" position="left" fields="data"
+	            title="Amount" grid="true"/>
+	            <apex:axis type="Category" position="bottom" fields="name"
+            		title="Case status"/>
+		        <apex:legend rendered="false" position="left"/>
+		        <apex:barSeries orientation="vertical" colorSet="#1ad06e,#e1f0c0,#00bfa5,#f9a114,#f7646c" colorsProgressWithinSeries="true" axis="left" xField="name" yField="data"/>
+		    </apex:chart>
+		</apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
