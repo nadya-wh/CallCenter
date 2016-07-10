@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
-        <apexClass>BossEmailTemplateController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>BossNotification</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CaseChartController</apexClass>
+        <apexClass>CaseController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CaseControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -29,15 +29,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ChartControllerHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChartControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ConnectCaseWithContactTriggerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>EmailTemplateHelper</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ManagerEmailTemplateController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -57,7 +61,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>RoleHelperTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SaveContactWithUniqueEmailTriggerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>forDeploy</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
@@ -348,7 +360,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-<<<<<<< HEAD
         <field>Contact.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -464,8 +475,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-=======
->>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <field>Product2.Description</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -606,6 +615,9 @@
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Territory2-Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Territory2Model-Territory Model Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -666,7 +678,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-<<<<<<< HEAD
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -676,8 +687,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-=======
->>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
@@ -691,13 +700,6 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-<<<<<<< HEAD
-=======
-        <apexPage>Test</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
->>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <apexPage>Web2CasePage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -726,6 +728,14 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Charts</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>New_Request</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -734,13 +744,10 @@
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
-<<<<<<< HEAD
         <tab>standard-Contact</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-=======
->>>>>>> ade8bc05d49c0e9107dccba59914be8f38e8c827
         <tab>standard-Product2</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
