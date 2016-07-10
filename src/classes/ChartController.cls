@@ -1,4 +1,11 @@
 public class ChartController {
+
+    private static final String INACTIVE_PRODUCTS= String.format(Label.Inactive_products, 
+                                                                 new String[]{});
+                                                                 
+    private static final String ACTIVE_PRODUCTS= String.format(Label.Active_products, 
+                                                               new String[]{});
+                                                                 
     public List<Data> getProductData() {
         List<Data> data = new List<Data>();
 
@@ -9,12 +16,12 @@ public class ChartController {
                           FROM Product2
                           WHERE isActive = false];
 
-        data.add(new Data('Active products', active));
-        data.add(new Data('Inactive products', inactive));
+        data.add(new Data(ACTIVE_PRODUCTS, active));
+        data.add(new Data(INACTIVE_PRODUCTS, inactive));
         return data;
     }
 
-    public static List<Data> getCaseData() {
+    public List<Data> getCaseData() {
         List<Data> data = new List<Data>();
         List<String> statuses = ChartControllerHelper.getCaseStatuses();
 
@@ -27,34 +34,47 @@ public class ChartController {
 
         return data;
     }
-
-    public static List<CaseData> getChartData() {
-        List<CaseData> data = new List<CaseData>();
-        data.add(new CaseData('Jan', 30, 90, 55));
-        data.add(new CaseData('Feb', 44, 15, 65));
-        data.add(new CaseData('Mar', 25, 32, 75));
-        data.add(new CaseData('Apr', 74, 28, 85));
-        data.add(new CaseData('May', 65, 51, 95));
-        data.add(new CaseData('Jun', 33, 45, 99));
-        data.add(new CaseData('Jul', 92, 82, 30));
-        data.add(new CaseData('Aug', 87, 73, 45));
-        data.add(new CaseData('Sep', 34, 65, 55));
-        data.add(new CaseData('Oct', 78, 66, 56));
-        data.add(new CaseData('Nov', 80, 67, 53));
-        data.add(new CaseData('Dec', 17, 70, 70));
-        return data;
-    }
     
-    public class CaseData {
+  public List<ProductCaseData> getProductStats() {
+        List<ProductCaseData> productCaseData = new List<ProductCaseData>();
+
+        List<Product2> products = [SELECT Id, Name, Price__c
+                                   FROM Product2 ORDER BY Name ASC];
+
+        for(Product2 p : products) {
+            List<Case_Product__c> productCases = [SELECT Case__c, Case__r.Status
+                                                  FROM Case_Product__c
+                                                  WHERE Product__c = :p.Id];
+
+            ProductCaseData pcd = new ProductCaseData(p, productCases);
+            productCaseData.add(pcd);
+        }
+
+        ChartControllerHelper.addCaseStatsToProductCaseData(productCaseData);
+        return productCaseData;
+    }
+
+    public class ProductCaseData {
+        public Product2 product { get; set; }
+
+        public List<Case_Product__c> productCases { get; set; }
+
+        public List<CaseStat> caseStats { get; set; }
+
+        public ProductCaseData(Product2 product, List<Case_Product__c> productCases) {
+            this.product = product;
+            this.productCases = productCases;
+        }
+    }
+
+    public class CaseStat {
         public String name { get; set; }
-        public Integer data1 { get; set; }
-        public Integer data2 { get; set; }
-        public Integer data3 { get; set; }
-        public CaseData(String name, Integer data1, Integer data2, Integer data3) {
+
+        public Long percent { get; set; }
+
+        public CaseStat(String name, Long percent) {
             this.name = name;
-            this.data1 = data1;
-            this.data2 = data2;
-            this.data3 = data3;
+            this.percent = percent;
         }
     }
 

@@ -6,11 +6,6 @@ public with sharing class CaseDataFactory {
 	private static final String CONTACT_NAME_PREFIX = 'Test_User';
 	private static final String EMAIL_POSTFIX = '@test.com';
 
-
-	public CaseDataFactory() {
-		
-	}
-
 	public static void createCaseWithOwner() {
 		List<Contact> contacts = new List<Contact>();
 		List<Case> cases = new List<Case>();

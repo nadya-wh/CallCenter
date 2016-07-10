@@ -50,7 +50,7 @@
 
                     <div class="form-group">
                         <label for="description">{!$Label.Description}</label>
-                        <textarea name="description" class="form-control form-aa" placeholder="{!$Label.Description}"></textarea><br/>
+                        <textarea name="description" rows="5" class="form-control form-aa" placeholder="{!$Label.Description}"></textarea><br/>
                     </div>
 
                     <button type="submit" style="float:right;" name="submit" class="btn btn-primary">{!$Label.Submit}</button>

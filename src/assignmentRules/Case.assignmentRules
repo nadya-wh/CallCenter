@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Case_Queue_for_CC_Manager</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>5000</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Case_Queue_for_Case_Receiver</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Case_Queue_for_Case_Operator</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>OR(RecordType.Name = &apos;Feedback(Canada)&apos;, RecordType.Name = &apos;Feedback(USA)&apos;, RecordType.Name = &apos;Product Inquiry(USA)&apos;, RecordType.Name = &apos;Product Inquiry(Canada)&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Case_Queue_for_CC_Manager</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>OR(RecordType.Name = &apos;Product Complaint(USA)&apos;, RecordType.Name = &apos;Product Complaint(Canada)&apos;, RecordType.Name = &apos;Service Complaint(USA)&apos;, RecordType.Name = &apos;Service Complaint(Canada)&apos;)</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>
