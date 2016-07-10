@@ -1,5 +1,6 @@
 public with sharing class CaseController {
 
+	
 	private static final String MANAGER_ROLE_NAME = 'CC Manager';
 	private static final String BOSS_ROLE_NAME = 'Boss';
 
