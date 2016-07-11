@@ -45,6 +45,10 @@
         <name>Feedback</name>
     </customLabels>
     <customLabels>
+        <label>Première Page</label>
+        <name>First_Page</name>
+    </customLabels>
+    <customLabels>
         <label>, Bonjour!
 Il y a une liste de cas pour les 7 derniers jours:</label>
         <name>Hello</name>
@@ -52,6 +56,14 @@ Il y a une liste de cas pour les 7 derniers jours:</label>
     <customLabels>
         <label>Produits inactifs</label>
         <name>Inactive_products</name>
+    </customLabels>
+    <customLabels>
+        <label>Dernière Page</label>
+        <name>Last_Page</name>
+    </customLabels>
+    <customLabels>
+        <label>Prochain</label>
+        <name>Next</name>
     </customLabels>
     <customLabels>
         <label>Graphiques organisation statistiques</label>
@@ -62,8 +74,16 @@ Il y a une liste de cas pour les 7 derniers jours:</label>
         <name>Owner_Name</name>
     </customLabels>
     <customLabels>
+        <label>Précédent</label>
+        <name>Previous</name>
+    </customLabels>
+    <customLabels>
         <label>Priorité</label>
         <name>Priority</name>
+    </customLabels>
+    <customLabels>
+        <label>Produit</label>
+        <name>Product</name>
     </customLabels>
     <customLabels>
         <label>Plainte de Produit</label>
@@ -80,6 +100,10 @@ Il y a une liste de cas pour les 7 derniers jours:</label>
     <customLabels>
         <label>Type D&apos;enregistrement</label>
         <name>Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Rapport sur les types de cas de produits</label>
+        <name>Report_on_product_case_types</name>
     </customLabels>
     <customLabels>
         <label>Plainte de Service</label>

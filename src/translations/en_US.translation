@@ -45,12 +45,24 @@
         <name>Feedback</name>
     </customLabels>
     <customLabels>
+        <label><!-- First Page --></label>
+        <name>First_Page</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Hello --></label>
         <name>Hello</name>
     </customLabels>
     <customLabels>
         <label><!-- Inactive products --></label>
         <name>Inactive_products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Page --></label>
+        <name>Last_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>Next</name>
     </customLabels>
     <customLabels>
         <label><!-- Organization statistic charts --></label>
@@ -61,8 +73,16 @@
         <name>Owner_Name</name>
     </customLabels>
     <customLabels>
+        <label><!-- Previous --></label>
+        <name>Previous</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Priority --></label>
         <name>Priority</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product --></label>
+        <name>Product</name>
     </customLabels>
     <customLabels>
         <label><!-- Product Complaint --></label>
@@ -79,6 +99,10 @@
     <customLabels>
         <label><!-- Record Type --></label>
         <name>Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Report on product case types --></label>
+        <name>Report_on_product_case_types</name>
     </customLabels>
     <customLabels>
         <label><!-- Service Complaint --></label>
