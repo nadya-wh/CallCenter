@@ -78,6 +78,13 @@
         <value>Feedback</value>
     </labels>
     <labels>
+        <fullName>First_Page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Page</shortDescription>
+        <value>First Page</value>
+    </labels>
+    <labels>
         <fullName>Hello</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -91,6 +98,20 @@ There is a list of cases for last 7 days:</value>
         <protected>true</protected>
         <shortDescription>Inactive products</shortDescription>
         <value>Inactive products</value>
+    </labels>
+    <labels>
+        <fullName>Last_Page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Page</shortDescription>
+        <value>Last Page</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
     </labels>
     <labels>
         <fullName>Organization_statistic_charts</fullName>
@@ -107,11 +128,25 @@ There is a list of cases for last 7 days:</value>
         <value>Owner Name</value>
     </labels>
     <labels>
+        <fullName>Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
         <fullName>Priority</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Priority</shortDescription>
         <value>Priority</value>
+    </labels>
+    <labels>
+        <fullName>Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product</shortDescription>
+        <value>Product</value>
     </labels>
     <labels>
         <fullName>Product_Complaint</fullName>
@@ -140,6 +175,13 @@ There is a list of cases for last 7 days:</value>
         <protected>true</protected>
         <shortDescription>Record Type</shortDescription>
         <value>Record Type</value>
+    </labels>
+    <labels>
+        <fullName>Report_on_product_case_types</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Report on product case types</shortDescription>
+        <value>Report on product case types</value>
     </labels>
     <labels>
         <fullName>Service_Complaint</fullName>
