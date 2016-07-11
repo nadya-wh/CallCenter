@@ -1,5 +1,6 @@
 @isTest
 private class RoleHelperTest {
+
 	
 	@isTest static void testGetRoleId() {
 		List<UserRole> roles = [SELECT Id, Name 

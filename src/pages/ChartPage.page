@@ -1,15 +1,13 @@
-<apex:page controller="ChartController" sidebar="false">
+<apex:page controller="ChartController" extensions="ProductPagination" sidebar="false">
     <apex:pageBlock title="{!$Label.Organization_statistic_charts}">
-        <apex:pageBlockSection title="{!$Label.Product_active_inactive_statistic}">
+        <apex:pageBlockSection title="{!$Label.Product_active_inactive_statistic} & {!$Label.Case_status_statistic}">
+        <apex:pageBlockSectionItem >
             <apex:chart height="400" width="600" data="{!productData}" animate="false">
                 <apex:pieSeries labelField="name" dataField="data" donut="20" colorSet="#1ad06e,#fa8072">
                 <apex:chartLabel orientation="vertical" color="#ffffff"/>
             </apex:pieSeries>
-
                 <apex:legend position="left"/>
             </apex:chart>
-        </apex:pageBlockSection>
-        <apex:pageBlockSection title="{!$Label.Case_status_statistic}">
             <apex:chart data="{!caseData}" height="400" width="600" legend="false">
                 <apex:axis type="Numeric" position="left" fields="data"
                 title="{!$Label.Amount}" grid="true"/>
@@ -18,12 +16,26 @@
                 <apex:legend rendered="false" position="left"/>
                 <apex:barSeries orientation="vertical" colorSet="#1ad06e,#e1f0c0,#00bfa5,#f9a114,#f7646c" colorsProgressWithinSeries="true" axis="left" xField="name" yField="data"/>
             </apex:chart>
+            </apex:pageBlockSectionItem>
         </apex:pageBlockSection>
     </apex:pageBlock>
-    <apex:pageBlock title="Report on product cases" >
-        <apex:pageBlockTable value="{!productStats}" var="ps">
-            <apex:column value="{!ps.product.Name}"/>
-            <apex:column title="{!ps.caseStats[0].name}" value="{!ps.caseStats[0].percent}"/>
-        </apex:pageBlockTable>
-    </apex:pageBlock>
+    <apex:form >
+        <apex:pageBlock id="product_report" title="Report on product case types" >
+            <apex:pageBlockTable value="{!productListStats}" var="ps">
+                <apex:column headerValue="Product">
+                	<apex:outputLink value="{!ps.product.Id}">{!ps.product.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="Product Complaint">{!ps.caseStats[0].percent}%</apex:column>
+                <apex:column headerValue="Service Complaint">{!ps.caseStats[1].percent}%</apex:column>
+                <apex:column headerValue="Product Inquiry">{!ps.caseStats[2].percent}%</apex:column>
+                <apex:column headerValue="Feedback">{!ps.caseStats[3].percent}%</apex:column>
+            </apex:pageBlockTable>
+            <apex:pageblockButtons >
+                <apex:commandButton value="First Page" rerender="product_report" action="{!firstPage}" disabled="{!prev}"/>
+                <apex:commandButton value="Previous" rerender="product_report" action="{!previous}" disabled="{!prev}"/>
+                <apex:commandButton value="Next" rerender="product_report" action="{!next}" disabled="{!nxt}"/>
+                <apex:commandButton value="Last Page" rerender="product_report" action="{!lastPage}" disabled="{!nxt}"/>
+            </apex:pageblockButtons>
+        </apex:pageBlock>
+    </apex:form>
 </apex:page>

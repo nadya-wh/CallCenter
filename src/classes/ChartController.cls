@@ -35,14 +35,17 @@ public class ChartController {
         return data;
     }
     
-  public List<ProductCaseData> getProductStats() {
+  public List<ProductCaseData> getProductStats(Integer lim, Integer offset) {
         List<ProductCaseData> productCaseData = new List<ProductCaseData>();
 
         List<Product2> products = [SELECT Id, Name, Price__c
-                                   FROM Product2 ORDER BY Name ASC];
+                                   FROM Product2
+                                   ORDER BY Name ASC
+                                   LIMIT :lim
+                                   OFFSET :offset];
 
         for(Product2 p : products) {
-            List<Case_Product__c> productCases = [SELECT Case__c, Case__r.Status
+            List<Case_Product__c> productCases = [SELECT Case__c, Case__r.RecordType.DeveloperName
                                                   FROM Case_Product__c
                                                   WHERE Product__c = :p.Id];
 
