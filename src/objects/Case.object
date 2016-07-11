@@ -86,7 +86,6 @@
     </businessProcesses>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -270,13 +269,6 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>SourceId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Status</fullName>
@@ -495,6 +487,7 @@
     </listViews>
     <listViews>
         <fullName>Case_Queue_for_Case_Receiver_CA</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>NAME</columns>
         <columns>CASES.SUBJECT</columns>
@@ -506,7 +499,12 @@
         <filters>
             <field>CASES.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Case.Feedback_Canada,Case.Product_Complaint_Canada,Case.Product_Inquiry_Canada</value>
+            <value>Case.Feedback_Canada,Case.Product_Complaint_Canada</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Product_Inquiry_Canada,Case.Service_Complaint_Canada</value>
         </filters>
         <label>Case Queue for Case Receiver (CA)</label>
         <language>en_US</language>
