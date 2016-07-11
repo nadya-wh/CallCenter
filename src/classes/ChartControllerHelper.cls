@@ -1,13 +1,12 @@
 public class ChartControllerHelper {
-    private static final String STATUS_NEW = 'New';
-
-	private static final String STATUS_CLOSED = 'Closed';
-	
-	private static final String STATUS_IN_PROGRESS = 'In Progress';
-	
-	private static final String STATUS_ON_HOLD = 'On Hold';
-	
-	private static final String STATUS_CANCELED = 'Canceled';
+    public static final String PRODUCT_COMPLAINT = 'Product_Complaint';
+    
+    public static final String SERVICE_COMPLAINT = 'Service_Complaint';
+    
+    public static final String PRODUCT_INQUIRY = 'Product_Inquiry';
+    
+    public static final String FEEDBACK = 'Feedback';
+    
     
 	public static List<String> getCaseStatuses() {
 		List<String> statuses = new List<String>();
@@ -26,40 +25,47 @@ public class ChartControllerHelper {
 
 	public static void addCaseStatsToProductCaseData(List<ChartController.ProductCaseData> productCaseDatas) {
 		for(ChartController.ProductCaseData pcd : productCaseDatas) {
-			Double sNew = 0;
-			Double sClosed = 0;
-			Double sInProgress = 0;
-			Double sOnHold = 0;
-			Double sCanceled = 0;
+			Double productComplaint = 0;
+			Double serviceComplaint = 0;
+			Double productInquiry = 0;
+			Double fback = 0;
 
-			Double caseStatSize = pcd.productCases.size();
-			map<String, Integer> caseStatsMap = new map<String, Integer>();
-            caseStatsMap.put(STATUS_NEW, 0);
-            caseStatsMap.put(STATUS_CLOSED, 0);
-            caseStatsMap.put(STATUS_IN_PROGRESS, 0);      
-            caseStatsMap.put(STATUS_ON_HOLD, 0);
-            caseStatsMap.put(STATUS_CANCELED, 0);
-            
+			Double caseStatSize = 0;
+            if(pcd.productCases != null) {
+           		caseStatSize = pcd.productCases.size();
+            }
             
 			for(Case_Product__c cp : pcd.productCases) {
-				Integer val = caseStatsMap.get(cp.Case__r.Status);
-				caseStatsMap.put(cp.Case__r.Status, ++val);
+                String name = cp.Case__r.RecordType.DeveloperName;
+                
+                if(name.contains(PRODUCT_COMPLAINT)) {
+                    productComplaint++;
+                }
+                else if(name.contains(SERVICE_COMPLAINT)) {
+                    serviceComplaint++;
+                } 
+                else if(name.contains(PRODUCT_INQUIRY)) {
+                    productInquiry++;
+                }
+                else if(name.contains(FEEDBACK)) {
+                    fback++;
+                }
 			}
+         
 			
             if(caseStatSize != 0) {
-                sNew = caseStatsMap.get(STATUS_NEW) * 100 / caseStatSize;
-                sClosed = caseStatsMap.get(STATUS_CLOSED) * 100 / caseStatSize;
-                sInProgress = caseStatsMap.get(STATUS_IN_PROGRESS) * 100 / caseStatSize;
-                sOnHold = caseStatsMap.get(STATUS_ON_HOLD) * 100 / caseStatSize;
-                sCanceled = caseStatsMap.get(STATUS_CANCELED) * 100 / caseStatSize;
+                productComplaint = productComplaint*100 / caseStatSize;
+                serviceComplaint = serviceComplaint*100 / caseStatSize;
+                productInquiry = productInquiry*100 / caseStatSize;
+                fback = fback*100 / caseStatSize;
+                
             }
 
 			List<ChartController.CaseStat> caseStats = new List<ChartController.CaseStat>();
-			caseStats.add(new ChartController.CaseStat(STATUS_NEW, sNew.round()));
-			caseStats.add(new ChartController.CaseStat(STATUS_CLOSED, sClosed.round()));
-			caseStats.add(new ChartController.CaseStat(STATUS_IN_PROGRESS, sInProgress.round()));
-			caseStats.add(new ChartController.CaseStat(STATUS_ON_HOLD, sOnHold.round()));
-			caseStats.add(new ChartController.CaseStat(STATUS_CANCELED, sCanceled.round()));
+			caseStats.add(new ChartController.CaseStat(PRODUCT_COMPLAINT, productComplaint.round()));
+			caseStats.add(new ChartController.CaseStat(SERVICE_COMPLAINT, serviceComplaint.round()));
+			caseStats.add(new ChartController.CaseStat(PRODUCT_INQUIRY, productInquiry.round()));
+			caseStats.add(new ChartController.CaseStat(FEEDBACK, fback.round()));
 			
 			pcd.caseStats = caseStats;
 		}
