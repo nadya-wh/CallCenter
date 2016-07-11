@@ -17,4 +17,13 @@ public class ChartControllerTest {
 
 		System.assert(!dataList.isEmpty());
 	}
+    
+    @isTest
+	private static void testGetProduct() {
+		ChartController controller = new ChartController();
+
+		List<ChartController.ProductCaseData> dataList = controller.getProductStats(10, 0);
+
+		System.assert(!dataList.isEmpty());
+	}
 }

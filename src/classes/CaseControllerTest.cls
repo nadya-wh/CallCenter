@@ -1,14 +1,31 @@
 @isTest
 private class CaseControllerTest {
-	
 
 	private static final String MANAGER_ROLE_NAME = 'CC Manager';
 	private static final String BOSS_ROLE_NAME = 'Boss';
+	private static final String NEW_STATUS = 'New';
+	private static final String CLOSED_STATUS = 'Closed';
+	private static final Integer RECORDS_COUNT = 2;
+
+	@testSetup static void createNewCases() {
+		createCasesWithStatus(NEW_STATUS);
+	}
+    
+    @testSetup static void createClosedCases() {
+		createCasesWithStatus(CLOSED_STATUS);
+	}
+
+	private static void createCasesWithStatus(String status) {
+		List<Case> cases = new List<Case>();
+		for (Integer i = 0; i < RECORDS_COUNT; i++) {
+			Case c = new Case(Status = status);
+			cases.add(c);
+		}
+		insert cases;
+	}
+
 
 	@isTest static void testGetCases() {
-		CaseDataFactory.createCasesWithStatus('Closed');
-		CaseDataFactory.createCasesWithStatus('New');
-
 		CaseController caseController = new CaseController();
 
 		System.assert(caseController.getCases().size() == 0);
