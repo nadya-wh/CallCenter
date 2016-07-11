@@ -18,6 +18,8 @@ retrieveOutput/
 unpacked/
 build.properties
 build.xml
+CallCenter.sublime-settings
+CallCenter.sublime-project
 unpackaged/
 
 *.sublime-settings
