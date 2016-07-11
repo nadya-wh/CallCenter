@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Montant</label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <name>Origin</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Email</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Téléphone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation>Toile</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Priority</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Haute</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Faible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>Moyen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Reason</name>
+        <picklistValues>
+            <masterLabel>Breakdown</masterLabel>
+            <translation>Panne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Complexity</masterLabel>
+            <translation>Équipement Complexité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Design</masterLabel>
+            <translation>Conception de l&apos;équipement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback</masterLabel>
+            <translation>Retour d&apos;information</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation</masterLabel>
+            <translation>Installation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation>Performance</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Electrical</masterLabel>
+            <translation>Électrique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic</masterLabel>
+            <translation>Électronique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical</masterLabel>
+            <translation>Mécanique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Structural</masterLabel>
+            <translation>De construction</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Feedback Page Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Des Champs</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Complaint Page Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Des Champs</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Inquiry Page Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Des Champs</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Complaint Page Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Des Champs</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Retour d&apos;information(Canada)</label>
+        <name>Feedback_Canada</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Retour d&apos;information(USA)</label>
+        <name>Feedback_USA</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plainte de produit(Canada)</label>
+        <name>Product_Complaint_Canada</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plainte de produit(USA)</label>
+        <name>Product_Complaint_USA</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Demande de produit(Canada)</label>
+        <name>Product_Inquiry_Canada</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Demande de produit(USA)</label>
+        <name>Product_Inquiry_USA</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plainte de service(Canada)</label>
+        <name>Service_Complaint_Canada</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plainte de service(USA)</label>
+        <name>Service_Complaint_USA</name>
+    </recordTypes>
+    <webLinks>
+        <label>Upsell / Cross-sell Opportunity</label>
+        <name>UpsellCrosssellOpportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

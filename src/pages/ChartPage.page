@@ -20,21 +20,21 @@
         </apex:pageBlockSection>
     </apex:pageBlock>
     <apex:form >
-        <apex:pageBlock id="product_report" title="Report on product case types" >
+        <apex:pageBlock id="product_report" title="{!$Label.Report_on_product_case_types}" >
             <apex:pageBlockTable value="{!productListStats}" var="ps">
-                <apex:column headerValue="Product">
-                	<apex:outputLink value="{!ps.product.Id}">{!ps.product.Name}</apex:outputLink>
+                <apex:column headerValue="{!$Label.Product}">
+                    <apex:outputLink value="{!ps.product.Id}">{!ps.product.Name}</apex:outputLink>
                 </apex:column>
-                <apex:column headerValue="Product Complaint">{!ps.caseStats[0].percent}%</apex:column>
-                <apex:column headerValue="Service Complaint">{!ps.caseStats[1].percent}%</apex:column>
-                <apex:column headerValue="Product Inquiry">{!ps.caseStats[2].percent}%</apex:column>
-                <apex:column headerValue="Feedback">{!ps.caseStats[3].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Product_Complaint}">{!ps.caseStats[0].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Service_Complaint}">{!ps.caseStats[1].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Product_Inquiry}">{!ps.caseStats[2].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Feedback}">{!ps.caseStats[3].percent}%</apex:column>
             </apex:pageBlockTable>
             <apex:pageblockButtons >
-                <apex:commandButton value="First Page" rerender="product_report" action="{!firstPage}" disabled="{!prev}"/>
-                <apex:commandButton value="Previous" rerender="product_report" action="{!previous}" disabled="{!prev}"/>
-                <apex:commandButton value="Next" rerender="product_report" action="{!next}" disabled="{!nxt}"/>
-                <apex:commandButton value="Last Page" rerender="product_report" action="{!lastPage}" disabled="{!nxt}"/>
+                <apex:commandButton value="{!$Label.First_Page}" rerender="product_report" action="{!firstPage}" disabled="{!prev}"/>
+                <apex:commandButton value="{!$Label.Previous}" rerender="product_report" action="{!previous}" disabled="{!prev}"/>
+                <apex:commandButton value="{!$Label.Next}" rerender="product_report" action="{!next}" disabled="{!nxt}"/>
+                <apex:commandButton value="{!$Label.Last_Page}" rerender="product_report" action="{!lastPage}" disabled="{!nxt}"/>
             </apex:pageblockButtons>
         </apex:pageBlock>
     </apex:form>

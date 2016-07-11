@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Active_products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Active products</shortDescription>
+        <value>Active products</value>
+    </labels>
+    <labels>
+        <fullName>Amount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Amount</shortDescription>
+        <value>Amount</value>
+    </labels>
+    <labels>
+        <fullName>Boss</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Boss</shortDescription>
+        <value>Boss</value>
+    </labels>
+    <labels>
+        <fullName>Boss_Email_Template_For_List_of_Cases</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Boss Email Template For List of Cases</shortDescription>
+        <value>Boss Email Template For List of Cases</value>
+    </labels>
+    <labels>
+        <fullName>Case_created</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case created</shortDescription>
+        <value>Case created</value>
+    </labels>
+    <labels>
+        <fullName>Case_status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case status</shortDescription>
+        <value>Case status</value>
+    </labels>
+    <labels>
+        <fullName>Case_status_statistic</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case status statistic</shortDescription>
+        <value>Case status statistic</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Name</shortDescription>
+        <value>Contact Name</value>
+    </labels>
+    <labels>
+        <fullName>Creation_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Creation Date</shortDescription>
+        <value>Creation Date</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Feedback</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Feedback</shortDescription>
+        <value>Feedback</value>
+    </labels>
+    <labels>
+        <fullName>First_Page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Page</shortDescription>
+        <value>First Page</value>
+    </labels>
+    <labels>
+        <fullName>Hello</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hello</shortDescription>
+        <value>, Hello! 
+There is a list of cases for last 7 days:</value>
+    </labels>
+    <labels>
+        <fullName>Inactive_products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Inactive products</shortDescription>
+        <value>Inactive products</value>
+    </labels>
+    <labels>
+        <fullName>Last_Page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Page</shortDescription>
+        <value>Last Page</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>Organization_statistic_charts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Organization statistic charts</shortDescription>
+        <value>Organization statistic charts</value>
+    </labels>
+    <labels>
+        <fullName>Owner_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Owner Name</shortDescription>
+        <value>Owner Name</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Priority</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Priority</shortDescription>
+        <value>Priority</value>
+    </labels>
+    <labels>
+        <fullName>Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>Product_Complaint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product Complaint</shortDescription>
+        <value>Product Complaint</value>
+    </labels>
+    <labels>
+        <fullName>Product_Inquiry</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product Inquiry</shortDescription>
+        <value>Product Inquiry</value>
+    </labels>
+    <labels>
+        <fullName>Product_active_inactive_statistic</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product active/inactive statistic</shortDescription>
+        <value>Product active/inactive statistic</value>
+    </labels>
+    <labels>
+        <fullName>Record_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Record Type</shortDescription>
+        <value>Record Type</value>
+    </labels>
+    <labels>
+        <fullName>Report_on_product_case_types</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Report on product case types</shortDescription>
+        <value>Report on product case types</value>
+    </labels>
+    <labels>
+        <fullName>Service_Complaint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Service Complaint</shortDescription>
+        <value>Service Complaint</value>
+    </labels>
+    <labels>
+        <fullName>Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>Submit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>ThankYouPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ThankYouPage</shortDescription>
+        <value>Thank you for creating Case request!</value>
+    </labels>
+</CustomLabels>

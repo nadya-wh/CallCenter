@@ -34,13 +34,18 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="00N3600000MutIZ">{!$Label.Record_Type}</label>
-                        <select class="form-control form-aa" id="00N3600000MutIZ" name="00N3600000MutIZ" title="Record Type">
-                            <option value="Product Complaint">{!$Label.Product_Complaint}</option>
-                            <option value="Service Complaint">{!$Label.Service_Complaint}</option>
-                            <option value="Product Inquiry">{!$Label.Product_Inquiry}</option>
-                            <option value="Feedback">{!$Label.Feedback}</option>
-                        </select><br/>
+                        <label for="recordType">{!$Label.Record_Type}</label>
+                        <select class="form-control form-aa"  id="recordType" name="recordType" title="Record Type">
+                        <option value="01236000000nD12">{!$Label.Product_Complaint}(USA)</option>
+                        <option value="01236000000nEFe">{!$Label.Service_Complaint}(USA)</option>
+                        <option value="01236000000nEFj">{!$Label.Product_Inquiry}(USA)</option>
+						<option value="01236000000nEFo">{!$Label.Feedback}(USA)</option>
+						<option value="01236000000nT0K">{!$Label.Product_Complaint}(Canada)</option>
+						<option value="01236000000nT0U">{!$Label.Service_Complaint}(Canada)</option>
+						<option value="01236000000nT0P">{!$Label.Product_Inquiry}(Canada)</option>
+						<option value="01236000000nT0F">{!$Label.Feedback}(Canada)</option>
+						</select>
+                        <br/>
                     </div>
 
                     <div class="form-group">

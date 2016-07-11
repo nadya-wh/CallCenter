@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Produits actifs</label>
+        <name>Active_products</name>
+    </customLabels>
+    <customLabels>
+        <label>Amunt</label>
+        <name>Amount</name>
+    </customLabels>
+    <customLabels>
+        <label>Patron</label>
+        <name>Boss</name>
+    </customLabels>
+    <customLabels>
+        <label>Patron Email Template Pour Liste de cas</label>
+        <name>Boss_Email_Template_For_List_of_Cases</name>
+    </customLabels>
+    <customLabels>
+        <label>Requête créé</label>
+        <name>Case_created</name>
+    </customLabels>
+    <customLabels>
+        <label>Statut du cas</label>
+        <name>Case_status</name>
+    </customLabels>
+    <customLabels>
+        <label>Case statut statistique</label>
+        <name>Case_status_statistic</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du Contact</label>
+        <name>Contact_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Date de création</label>
+        <name>Creation_Date</name>
+    </customLabels>
+    <customLabels>
+        <label>La Description</label>
+        <name>Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Retour D&apos;information</label>
+        <name>Feedback</name>
+    </customLabels>
+    <customLabels>
+        <label>Première Page</label>
+        <name>First_Page</name>
+    </customLabels>
+    <customLabels>
+        <label>, Bonjour!
+Il y a une liste de cas pour les 7 derniers jours:</label>
+        <name>Hello</name>
+    </customLabels>
+    <customLabels>
+        <label>Produits inactifs</label>
+        <name>Inactive_products</name>
+    </customLabels>
+    <customLabels>
+        <label>Dernière Page</label>
+        <name>Last_Page</name>
+    </customLabels>
+    <customLabels>
+        <label>Prochain</label>
+        <name>Next</name>
+    </customLabels>
+    <customLabels>
+        <label>Graphiques organisation statistiques</label>
+        <name>Organization_statistic_charts</name>
+    </customLabels>
+    <customLabels>
+        <label>Le nom du propriétaire</label>
+        <name>Owner_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Précédent</label>
+        <name>Previous</name>
+    </customLabels>
+    <customLabels>
+        <label>Priorité</label>
+        <name>Priority</name>
+    </customLabels>
+    <customLabels>
+        <label>Produit</label>
+        <name>Product</name>
+    </customLabels>
+    <customLabels>
+        <label>Plainte de Produit</label>
+        <name>Product_Complaint</name>
+    </customLabels>
+    <customLabels>
+        <label>Demande de Produit</label>
+        <name>Product_Inquiry</name>
+    </customLabels>
+    <customLabels>
+        <label>Produit actif / inactif statistique</label>
+        <name>Product_active_inactive_statistic</name>
+    </customLabels>
+    <customLabels>
+        <label>Type D&apos;enregistrement</label>
+        <name>Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Rapport sur les types de cas de produits</label>
+        <name>Report_on_product_case_types</name>
+    </customLabels>
+    <customLabels>
+        <label>Plainte de Service</label>
+        <name>Service_Complaint</name>
+    </customLabels>
+    <customLabels>
+        <label>Statut</label>
+        <name>Status</name>
+    </customLabels>
+    <customLabels>
+        <label>Assujettir</label>
+        <name>Subject</name>
+    </customLabels>
+    <customLabels>
+        <label>Soumettre</label>
+        <name>Submit</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous vous remercions de la création de la demande de Requête!</label>
+        <name>ThankYouPage</name>
+    </customLabels>
+    <customTabs>
+        <label>Graphiques</label>
+        <name>Charts</name>
+    </customTabs>
+    <customTabs>
+        <label>Nouvelle Requête</label>
+        <name>New_Request</name>
+    </customTabs>
+    <reportTypes>
+        <label>Rapport sur les cas de produits</label>
+        <name>Report_on_product_cases</name>
+        <sections>
+            <label><!-- Case Products --></label>
+            <name>Case Products</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+</Translations>
