@@ -30,7 +30,10 @@ public class ChartControllerHelper {
 			Double productInquiry = 0;
 			Double fback = 0;
 
-			Double caseStatSize = pcd.productCases.size();
+			Double caseStatSize = 0;
+            if(pcd.productCases != null) {
+           		caseStatSize = pcd.productCases.size();
+            }
             
 			for(Case_Product__c cp : pcd.productCases) {
                 String name = cp.Case__r.RecordType.DeveloperName;

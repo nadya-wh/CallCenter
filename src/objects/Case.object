@@ -366,43 +366,6 @@
         <type>Picklist</type>
     </fields>
     <listViews>
-        <fullName>AllClosedCases</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>All Closed Cases</label>
-    </listViews>
-    <listViews>
-        <fullName>AllOpenCases</fullName>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>All Open Cases</label>
-    </listViews>
-    <listViews>
-        <fullName>CC_Manager_Queue_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Case Queue for CC Manager</label>
-        <language>en_US</language>
-        <queue>Case_Queue_for_CC_Manager</queue>
-        <sharedTo>
-            <role>CC_Manager</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Case_Queue_for</fullName>
         <booleanFilter>1 OR 2</booleanFilter>
         <columns>CASES.CASE_NUMBER</columns>
@@ -509,16 +472,6 @@
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Case_Queue_for_Case_Operator_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Case Queue for Case Operator</label>
-        <language>en_US</language>
-        <queue>Case_Queue_for_Case_Operator</queue>
-        <sharedTo>
-            <role>Case_Operator</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Case_Queue_for_Case_Operator_USA</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>NAME</columns>
@@ -563,16 +516,6 @@
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Case_Queue_for_Case_Receiver_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Case Queue for Case Receiver</label>
-        <language>en_US</language>
-        <queue>Case_Queue_for_Case_Receiver</queue>
-        <sharedTo>
-            <role>Case_Receiver</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Case_Queue_for_QA_Manager_CA</fullName>
         <booleanFilter>1 OR 2</booleanFilter>
         <columns>CASES.CASE_NUMBER</columns>
@@ -598,16 +541,6 @@
         <queue>Case_Queue_for_QA_Manager</queue>
         <sharedTo>
             <group>Canada_Group</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Case_Queue_for_QA_Manager_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Case Queue for QA Manager</label>
-        <language>en_US</language>
-        <queue>Case_Queue_for_QA_Manager</queue>
-        <sharedTo>
-            <role>QA_Manager</role>
         </sharedTo>
     </listViews>
     <listViews>
