@@ -1,0 +1,3 @@
+<apex:page >
+    <c:caseTable />
+</apex:page>
