@@ -24,22 +24,12 @@
         <ruleEntry>
             <assignedTo>Case_Queue_for_Case_Operator</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>RecordType.Name = &apos;Feedback&apos;</formula>
+            <formula>OR(RecordType.Name = &apos;Feedback(Canada)&apos;, RecordType.Name = &apos;Feedback(USA)&apos;, RecordType.Name = &apos;Product Inquiry(USA)&apos;, RecordType.Name = &apos;Product Inquiry(Canada)&apos;)</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Case_Queue_for_CC_Manager</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>RecordType.Name = &apos;Product Complaint&apos;</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Case_Queue_for_CC_Manager</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>RecordType.Name = &apos;Service Complaint&apos;</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Case_Queue_for_Case_Operator</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>RecordType.Name = &apos;Product Inquiry&apos;</formula>
+            <formula>OR(RecordType.Name = &apos;Product Complaint(USA)&apos;, RecordType.Name = &apos;Product Complaint(Canada)&apos;, RecordType.Name = &apos;Service Complaint(USA)&apos;, RecordType.Name = &apos;Service Complaint(Canada)&apos;)</formula>
         </ruleEntry>
     </assignmentRule>
 </AssignmentRules>

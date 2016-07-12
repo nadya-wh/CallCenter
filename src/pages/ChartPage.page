@@ -1,16 +1,41 @@
-<apex:page controller="ChartController">
-    <apex:chart height="400" width="700" data="{!data}">
-        <apex:legend position="right"/>
-        <apex:axis type="Numeric" position="left" fields="data1"
-            title="Opportunities Closed" grid="true"/>
-        <apex:axis type="Numeric" position="right" fields="data3"
-            title="Revenue (millions)"/>
-        <apex:axis type="Category" position="bottom" fields="name"
-            title="Month of the Year">
-            <apex:chartLabel rotate="315"/>
-        </apex:axis>
-        <apex:lineSeries title="Active products" axis="left" xField="name" yField="data1" markerType="circle" markerSize="4" markerFill="#8E35EF"/>
-        <apex:lineSeries title="Inactive products" axis="left" xField="name" yField="data2"
-            markerType="circle" markerSize="4" markerFill="#FF0000"/>
-    </apex:chart>
+<apex:page controller="ChartController" extensions="ProductPagination" sidebar="false">
+    <apex:pageBlock title="{!$Label.Organization_statistic_charts}">
+        <apex:pageBlockSection title="{!$Label.Product_active_inactive_statistic} & {!$Label.Case_status_statistic}">
+        <apex:pageBlockSectionItem >
+            <apex:chart height="400" width="600" data="{!productData}" animate="false">
+                <apex:pieSeries labelField="name" dataField="data" donut="20" colorSet="#1ad06e,#fa8072">
+                <apex:chartLabel orientation="vertical" color="#ffffff"/>
+            </apex:pieSeries>
+                <apex:legend position="left"/>
+            </apex:chart>
+            <apex:chart data="{!caseData}" height="400" width="600" legend="false">
+                <apex:axis type="Numeric" position="left" fields="data"
+                title="{!$Label.Amount}" grid="true"/>
+                <apex:axis type="Category" position="bottom" fields="name"
+                    title="{!$Label.Case_status}"/>
+                <apex:legend rendered="false" position="left"/>
+                <apex:barSeries orientation="vertical" colorSet="#1ad06e,#e1f0c0,#00bfa5,#f9a114,#f7646c" colorsProgressWithinSeries="true" axis="left" xField="name" yField="data"/>
+            </apex:chart>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:form >
+        <apex:pageBlock id="product_report" title="{!$Label.Report_on_product_case_types}" >
+            <apex:pageBlockTable value="{!productListStats}" var="ps">
+                <apex:column headerValue="{!$Label.Product}">
+                    <apex:outputLink value="{!ps.product.Id}">{!ps.product.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="{!$Label.Product_Complaint}">{!ps.caseStats[0].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Service_Complaint}">{!ps.caseStats[1].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Product_Inquiry}">{!ps.caseStats[2].percent}%</apex:column>
+                <apex:column headerValue="{!$Label.Feedback}">{!ps.caseStats[3].percent}%</apex:column>
+            </apex:pageBlockTable>
+            <apex:pageblockButtons >
+                <apex:commandButton value="{!$Label.First_Page}" rerender="product_report" action="{!firstPage}" disabled="{!prev}"/>
+                <apex:commandButton value="{!$Label.Previous}" rerender="product_report" action="{!previous}" disabled="{!prev}"/>
+                <apex:commandButton value="{!$Label.Next}" rerender="product_report" action="{!next}" disabled="{!nxt}"/>
+                <apex:commandButton value="{!$Label.Last_Page}" rerender="product_report" action="{!lastPage}" disabled="{!nxt}"/>
+            </apex:pageblockButtons>
+        </apex:pageBlock>
+    </apex:form>
 </apex:page>

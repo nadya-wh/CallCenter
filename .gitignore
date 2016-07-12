@@ -11,6 +11,16 @@
 *.sublime-project
 config/
 deploy/
+codepkg/
+mypkg/
+removecodepkg/
+retrieveOutput/
+unpacked/
+build.properties
+build.xml
+CallCenter.sublime-settings
+CallCenter.sublime-project
+unpackaged/
 
 *.sublime-settings
 

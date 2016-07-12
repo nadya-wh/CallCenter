@@ -6,7 +6,7 @@
 Hello, {! recipient.Name}!
 There is a list of your subordinates' cases:
 
-<c:caseTable />
+<c:caseTable role="CC Manager"/>
 
 </messaging:htmlEmailBody>
 </messaging:emailTemplate>

@@ -124,4 +124,28 @@
         <label><!-- ThankYouPage --></label>
         <name>ThankYouPage</name>
     </customLabels>
+<<<<<<< HEAD
+=======
+    <customTabs>
+        <label><!-- Charts --></label>
+        <name>Charts</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- New Request --></label>
+        <name>New_Request</name>
+    </customTabs>
+    <reportTypes>
+        <description><!-- Report on product cases --></description>
+        <label><!-- Report on product cases --></label>
+        <name>Report_on_product_cases</name>
+        <sections>
+            <label><!-- Case Products --></label>
+            <name>Case Products</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
 </Translations>
