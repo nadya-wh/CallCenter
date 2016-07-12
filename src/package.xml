@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>BossNotification</members>
+        <members>CaseController</members>
+        <members>CaseControllerTest</members>
+        <members>CaseOwnerNotififcation</members>
+        <members>CaseOwnerNotififcationTest</members>
+        <members>ChartController</members>
+        <members>ChartControllerHelper</members>
+        <members>ConnectCaseWithContactTriggerTest</members>
+        <members>EmailTemplateHelper</members>
+        <members>ManagerNotification</members>
+        <members>ManagerNotificationTest</members>
+        <members>NotificationSenderHelper</members>
+        <members>RoleHelper</members>
+        <members>RoleHelperTest</members>
+        <members>SaveContactWithUniqueEmailTriggerTest</members>
+        <members>BossNotificationTest</members>
+        <members>ChartControllerHelperTest</members>
+        <members>ChartControllerTest</members>
+        <members>ProductPagination</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>caseTable</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>Web2CasePage</members>
+        <members>ChartPage</members>
+        <members>Web2CaseThankYouPage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>ConnectCaseWithContactTrigger</members>
+        <members>SaveContactWithUniqueEmailTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>Case.TypeProcess</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Our_Call_Center</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Case.Amount__c</members>
+        <members>Case.Status</members>
+        <members>Case.Status</members>
+        <members>Product2.Price__c</members>
+        <members>Product2.Unique_Name__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Case_Product__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account-fr</members>
+        <members>Campaign-fr</members>
+        <members>Case-fr</members>
+        <members>Case_Product__c-en_US</members>
+        <members>Case_Product__c-fr</members>
+        <members>Contact-fr</members>
+        <members>Lead-fr</members>
+        <members>Opportunity-fr</members>
+        <members>Product2-fr</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>Charts</members>
+        <members>New_Request</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>unfiled$public/Boss_Email_Template_For_List_of_Cases</members>
+        <members>unfiled$public/OwnerNotification</members>
+        <members>unfiled$public/Weekly_newsletter_for_Manager</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Change_junction_product-1</members>
+        <members>Changes_in_product-1</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Case-Case %28Marketing%29 Layout</members>
+        <members>Case-Case %28Sales%29 Layout</members>
+        <members>Case-Case %28Support%29 Layout</members>
+        <members>Case-Case Layout</members>
+        <members>Case-Feedback Page Layout</members>
+        <members>Case-Product Complaint Page Layout</members>
+        <members>Case-Product Inquiry Page Layout</members>
+        <members>Case-Service Complaint Page Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>CaseInteraction-Case Feed Layout</members>
+        <members>Case_Product__c-Batch Layout</members>
+        <members>Contact-Contact %28Marketing%29 Layout</members>
+        <members>Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact-Contact %28Support%29 Layout</members>
+        <members>Contact-Contact Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Case.Case_Queue_for_CC_Manager_CA</members>
+        <members>Case.Case_Queue_for_CC_Manager_USA</members>
+        <members>Case.Case_Queue_for_Case_Operator_Can</members>
+        <members>Case.Case_Queue_for_Case_Operator_USA</members>
+        <members>Case.Case_Queue_for_QA_Manager_CA</members>
+        <members>Case.Case_Queue_for_QA_Manager_USA</members>
+        <members>Case.Case_Queue_for</members>
+        <members>Case.Case_Queue_for_Case_Receiver_CA</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Case_Queue_for_CC_Manager</members>
+        <members>Case_Queue_for_Case_Operator</members>
+        <members>Case_Queue_for_Case_Receiver</members>
+        <members>Case_Queue_for_QA_Manager</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Case.Feedback_Canada</members>
+        <members>Case.Feedback_USA</members>
+        <members>Case.Product_Complaint_Canada</members>
+        <members>Case.Product_Complaint_USA</members>
+        <members>Case.Product_Inquiry_Canada</members>
+        <members>Case.Product_Inquiry_USA</members>
+        <members>Case.Service_Complaint_Canada</members>
+        <members>Case.Service_Complaint_USA</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Boss</members>
+        <members>CC_Manager</members>
+        <members>Case_Operator</members>
+        <members>Case_Receiver</members>
+        <members>QA_Manager</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>Canada_Group</members>
+        <members>USA_Group</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>bootstrap336</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>fr</members>
+        <members>en_US</members>
+        <name>Translations</name>
+    </types>
+    <types>
+        <members>Report_on_product_cases</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>Case_Product__c</members>
+        <members>Product2</members>
+        <name>Workflow</name>
+    </types>
+    <version>36.0</version>
+</Package>
