@@ -4,4 +4,9 @@
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <label>Web2CasePage</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>11</minorNumber>
+        <namespace>sf_chttr_apps</namespace>
+    </packageVersions>
 </ApexPage>

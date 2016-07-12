@@ -15,4 +15,18 @@
         <label>Nom Unique</label>
         <name>Unique_Name__c</name>
     </fields>
+<<<<<<< HEAD
+=======
+    <layouts>
+        <layout>Product Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Des Champs</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
 </CustomObjectTranslation>

@@ -1,7 +1,7 @@
 @isTest
 public class SaveContactWithUniqueEmailTriggerTest {
     @testSetup
-    static void setup() {
+    private static void setup() {
         Contact contact = new Contact(
             						  FirstName='TestFName',
         							  LastName='TestLName',
@@ -11,7 +11,7 @@ public class SaveContactWithUniqueEmailTriggerTest {
     }
     
     @isTest
-    static void testAddContactWithExitingEmail() {
+    private static void testAddContactWithExitingEmail() {
        System.assertEquals(1, [SELECT count()
             				   FROM Contact 
                                WHERE Email='exiting@email.com']);
@@ -29,7 +29,7 @@ public class SaveContactWithUniqueEmailTriggerTest {
     }
     
     @isTest
-    static void testUpdateContactWithoutChangingEmail() {
+    private static void testUpdateContactWithoutChangingEmail() {
         Contact contact = [SELECT Id, FirstName, LastName
             		       FROM Contact 
                            WHERE Email='exiting@email.com'

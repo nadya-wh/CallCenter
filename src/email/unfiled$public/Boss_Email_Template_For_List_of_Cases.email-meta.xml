@@ -4,6 +4,11 @@
     <available>true</available>
     <encodingKey>ISO-8859-1</encodingKey>
     <name>Boss Email Template For List of Cases</name>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>11</minorNumber>
+        <namespace>sf_chttr_apps</namespace>
+    </packageVersions>
     <style>none</style>
     <subject>Weekly newsletter</subject>
     <type>visualforce</type>

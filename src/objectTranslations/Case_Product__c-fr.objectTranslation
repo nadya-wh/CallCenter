@@ -27,6 +27,16 @@
         <relationshipLabel>Produits Case</relationshipLabel>
     </fields>
     <gender><!-- Masculine --></gender>
+<<<<<<< HEAD
+=======
+    <layouts>
+        <layout>Batch Layout</layout>
+        <sections>
+            <label>Liens Personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
     <nameFieldLabel><!-- Case Product Number --></nameFieldLabel>
     <startsWith><!-- Consonant --></startsWith>
 </CustomObjectTranslation>

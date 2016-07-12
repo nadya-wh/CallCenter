@@ -1,64 +1,69 @@
 <apex:page sidebar="false">
 
-	<style type="text/css">
-		.form-aa {
-			max-width: 300px;
-			position: relative;
-		}
-		.container {
-			vertical-align: middle !important
-		}
-	</style>
+    <style type="text/css">
+        .form-aa {
+            max-width: 300px;
+            position: relative;
+        }
+        .container {
+            vertical-align: middle !important
+        }
+    </style>
 
-	<link href="{!URLFOR($Resource.bootstrap336, 'bootstrap/css/bootstrap.min.css')}" rel="stylesheet" media="screen"/>
+    <link href="{!URLFOR($Resource.bootstrap336, 'bootstrap/css/bootstrap.min.css')}" rel="stylesheet" media="screen"/>
     <apex:includeScript value="{!URLFOR($Resource.bootstrap336, 'js/bootstrap.min.js')}"/>
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
 
     <div class="container">
-	    <div class="row">
-		    <div class="col-lg-4 center-block">
-				<form action="https://www.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+        <div class="row">
+            <div class="col-lg-4 center-block">
+                <form action="https://www.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-				    <input type="hidden" name="orgid" value="00D36000001GlfX"/>
-				    <input type="hidden" name="retURL" value="{!$Site.Domain}{!URLFOR($Page.Web2CaseThankYouPage)}"/>
+                    <input type="hidden" name="orgid" value="00D36000001GlfX"/>
+                    <input type="hidden" name="retURL" value="{!$Site.Domain}{!URLFOR($Page.Web2CaseThankYouPage)}"/>
 
-			  		<div class="form-group">
-					    <label for="name">Contact Name</label>
-					    <input type="text" id="name" maxlength="80" name="name" size="20" class="form-control form-aa" placeholder="Contact Name" /><br/>
-					</div>
+                    <div class="form-group">
+                        <label for="name">{!$Label.Contact_Name}</label>
+                        <input type="text" id="name" maxlength="80" name="name" size="20" class="form-control form-aa" placeholder="{!$Label.Contact_Name}" /><br/>
+                    </div>
 
-					<div class="form-group">
-					    <label for="email">Email</label>
-					    <input id="email" maxlength="80" name="email" size="20" type="text" class="form-control form-aa" placeholder="Email" /><br/>
-				    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" maxlength="80" name="email" size="20" type="text" class="form-control form-aa" placeholder="Email" /><br/>
+                    </div>
 
-					<div class="form-group">
-						<label for="00N3600000MutIZ">Record Type</label>
-						<select class="form-control form-aa" id="00N3600000MutIZ" name="00N3600000MutIZ" title="Record Type">
-							<option value="Product Complaint">Product Complaint</option>
-							<option value="Service Complaint">Service Complaint</option>
-							<option value="Product Inquiry">Product Inquiry</option>
-							<option value="Feedback">Feedback</option>
-					    </select><br/>
-					</div>
+                    <div class="form-group">
+                        <label for="recordType">{!$Label.Record_Type}</label>
+                        <select class="form-control form-aa"  id="recordType" name="recordType" title="Record Type">
+                        <option value="01236000000nD12">{!$Label.Product_Complaint}(USA)</option>
+                        <option value="01236000000nEFe">{!$Label.Service_Complaint}(USA)</option>
+                        <option value="01236000000nEFj">{!$Label.Product_Inquiry}(USA)</option>
+						<option value="01236000000nEFo">{!$Label.Feedback}(USA)</option>
+						<option value="01236000000nT0K">{!$Label.Product_Complaint}(Canada)</option>
+						<option value="01236000000nT0U">{!$Label.Service_Complaint}(Canada)</option>
+						<option value="01236000000nT0P">{!$Label.Product_Inquiry}(Canada)</option>
+						<option value="01236000000nT0F">{!$Label.Feedback}(Canada)</option>
+						</select>
+                        <br/>
+                    </div>
 
-					<div class="form-group">
-					    <label for="subject">Subject</label>
-					    <input id="subject" maxlength="80" name="subject" size="20" type="text" class="form-control form-aa" placeholder="Subject" /><br/>
-				    </div>
+                    <div class="form-group">
+                        <label for="subject">{!$Label.Subject}</label>
+                        <input id="subject" maxlength="80" name="subject" size="20" type="text" class="form-control form-aa" placeholder="{!$Label.Subject}" /><br/>
+                    </div>
 
-					<div class="form-group">
-					    <label for="description">Description</label>
-					    <textarea name="description" class="form-control form-aa" placeholder="Description"></textarea><br/>
-				    </div>
+                    <div class="form-group">
+                        <label for="description">{!$Label.Description}</label>
+                        <textarea name="description" rows="5" class="form-control form-aa" placeholder="{!$Label.Description}"></textarea><br/>
+                    </div>
 
-				    <button type="submit" style="float:right;" name="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" style="float:right;" name="submit" class="btn btn-primary">{!$Label.Submit}</button>
 
-				</form>
-			</div>
-		</div>
-	</div>
+                </form>
+            </div>
+        </div>
+    </div>
 
   
 </apex:page>

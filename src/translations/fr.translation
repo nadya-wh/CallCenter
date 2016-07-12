@@ -125,4 +125,27 @@ Il y a une liste de cas pour les 7 derniers jours:</label>
         <label>Nous vous remercions de la création de la demande de Requête!</label>
         <name>ThankYouPage</name>
     </customLabels>
+<<<<<<< HEAD
+=======
+    <customTabs>
+        <label>Graphiques</label>
+        <name>Charts</name>
+    </customTabs>
+    <customTabs>
+        <label>Nouvelle Requête</label>
+        <name>New_Request</name>
+    </customTabs>
+    <reportTypes>
+        <label>Rapport sur les cas de produits</label>
+        <name>Report_on_product_cases</name>
+        <sections>
+            <label><!-- Case Products --></label>
+            <name>Case Products</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
 </Translations>

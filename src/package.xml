@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+<<<<<<< HEAD
         <members>Case.Amount__c</members>
         <name>CustomField</name>
     </types>
@@ -10,10 +11,63 @@
     </types>
     <types>
         <members>Case_Product__c</members>
+=======
+        <members>Our_Call_Center</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>BossNotification</members>
+        <members>BossNotificationTest</members>
+        <members>CaseController</members>
+        <members>CaseControllerTest</members>
+        <members>CaseOwnerNotififcation</members>
+        <members>CaseOwnerNotififcationTest</members>
+        <members>ChartController</members>
+        <members>ChartControllerHelper</members>
+        <members>ChartControllerHelperTest</members>
+        <members>ChartControllerTest</members>
+        <members>ConnectCaseWithContactTriggerTest</members>
+        <members>EmailTemplateHelper</members>
+        <members>ManagerNotification</members>
+        <members>ManagerNotificationTest</members>
+        <members>NotificationSenderHelper</members>
+        <members>ProductPagination</members>
+        <members>RoleHelper</members>
+        <members>RoleHelperTest</members>
+        <members>SaveContactWithUniqueEmailTriggerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Case</members>
+        <members>Case_Product__c</members>
+        <members>Contact</members>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
         <members>Product2</members>
         <name>CustomObject</name>
     </types>
     <types>
+<<<<<<< HEAD
         <members>Account-fr</members>
         <members>Case-fr</members>
         <members>Case_Product__c-en_US</members>
@@ -30,6 +84,73 @@
     <types>
         <members>en_US</members>
         <members>fr</members>
+=======
+        <members>*</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>unfiled$public/Boss_Email_Template_For_List_of_Cases</members>
+        <members>unfiled$public/OwnerNotification</members>
+        <members>unfiled$public/Weekly_newsletter_for_Manager</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>Case-Case Layout</members>
+        <members>Case-Feedback Page Layout</members>
+        <members>Case-Product Complaint Page Layout</members>
+        <members>Case-Product Inquiry Page Layout</members>
+        <members>Case-Service Complaint Page Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>Case_Product__c-Batch Layout</members>
+        <members>Contact-Contact %28Marketing%29 Layout</members>
+        <members>Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact-Contact %28Support%29 Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Product2-Product Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>Call Center</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>Boss</members>
+        <members>CC_Manager</members>
+        <members>Case_Operator</members>
+        <members>Case_Receiver</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>*</members>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
         <name>Translations</name>
     </types>
     <types>
@@ -37,5 +158,15 @@
         <members>Product2</members>
         <name>Workflow</name>
     </types>
+<<<<<<< HEAD
     <version>36.0</version>
+=======
+    <types>
+        <members>Account</members>
+        <members>Case</members>
+        <members>Product</members>
+        <name>Settings</name>
+    </types>
+    <version>31.0</version>
+>>>>>>> 31221ab309af8e5ebdbb493e97776969557e1b9b
 </Package>

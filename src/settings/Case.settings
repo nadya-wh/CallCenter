@@ -3,9 +3,6 @@
     <caseAssignNotificationTemplate>unfiled$public/SupportCaseAssignmentNotification</caseAssignNotificationTemplate>
     <caseCreateNotificationTemplate>unfiled$public/SupportCaseCreatedPhoneInquiries</caseCreateNotificationTemplate>
     <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
-    <defaultCaseOwner>mentor_admih@epam.sf</defaultCaseOwner>
-    <defaultCaseOwnerType>User</defaultCaseOwnerType>
-    <defaultCaseUser>mentor_admih@epam.sf</defaultCaseUser>
     <emailToCase>
         <enableEmailToCase>true</enableEmailToCase>
         <enableHtmlEmail>true</enableHtmlEmail>
